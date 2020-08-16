@@ -19,6 +19,7 @@ us_states_table = Table(
     Column("confirmed_deaths", Integer, nullable=True),
     Column("probable_cases", Integer, nullable=True),
     Column("probable_deaths", Integer, nullable=True),
+    sqlite_autoincrement=True
 )
 
 
@@ -55,6 +56,6 @@ class StateRecord(StateRecordBase):
 
 class StateRecordResponse(BaseModel):
     message: Optional[str]
-    modifiedRecord: Optional[StateRecord]
+    modifiedRecord: Optional[StateRecordBase]
 
 

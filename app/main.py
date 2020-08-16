@@ -9,11 +9,17 @@ app = FastAPI()
 
 
 @app.get("/staterecords/")
-def read(start: Optional[int] = 0 , count: Optional[int] = 10 ):
-    rs = us_states_dao().read()[start:(start+count)]
-    print(rs)
+def read(response: Response,start: Optional[int] = 0 , count: Optional[int] = 10 ,):
+    rs = us_states_dao().read()
+    message = ''
+    if rs and start  >= len(rs):
+        message = "start index(start) cannot be >= length of records"
+        response.status_code = status.HTTP_422_UNPROCESSABLE_ENTITY
+        rs = None
+    elif rs:
+        rs = rs[start:(start+count)]
 
-    return {"records": rs}
+    return {"records": rs , "message":message}
 
 @app.post("/staterecord", response_model=StateRecord, status_code=201)
 def create(payload: StateRecordBase):
