@@ -2,7 +2,7 @@
 
 ## Features <br>
 1. python utility script to create a sqllite schema and insert data from csv file into it.
-2. restfull api with FAST API library to insert,update,select,delete endpoints to manipulate data in sqllite database.
+2. restful api with FAST API library to insert,update,select,delete endpoints to manipulate data in sqllite database.
 3. request and response validation using pydentic models.
 4. database operations performed using Sqlalchemy ORM
 4. inbuilt ui for trying out requests thanks to FAST API library.
@@ -30,8 +30,11 @@ alternatively `python -m venv env`  <br>
 
  ####  step 3: activate enviroment
 on windows<br>
+
 `env\Scripts\activate`<br>
+
 on linux<br>
+
 `source env/bin/activate`<br>
 
 
@@ -46,22 +49,26 @@ this will create a new sqllite file and insert records from us-states.csv file.<
 exiting sqllite file already contains data so this step is optional.<br>
 
 `python3 sqllite.py`<br>
+
 ![creating sqllite!](/assets/images/sqllite.JPG  "sqllite")
 
  #### step 6: move into api directory<br>
 `cd app`
 
  #### step 7: (optional)  run test cases for api<br>
-'pytest'<br>
+`pytest`<br>
+
 ![test cases!](/assets/images/testcases.JPG  "test cases")
 
  #### step 8: start rest api in server<br>
- 'uvicorn main:app --host 0.0.0.0'<br>
+ `uvicorn main:app --host 0.0.0.0`<br>
+ 
 ![run api!](/assets/images/runningapi.JPG  "run api")
 
 
  #### you can try out api on browser by going to <br>
 http://localhost:8000/docs
+
 ![try!](/assets/images/trying.JPG  "try")
 
 
