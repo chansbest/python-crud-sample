@@ -3,21 +3,21 @@
 
 ## installation 
 ### Prerequisites:
- Python 3.8 ( should probably work fine 3.6+)
- git
+ Python 3.8 ( should probably work fine 3.6+)<br>
+ git<br>
 
 ### Steps
-step 1:
-clone repository to local drive
+step 1: <br>
+clone repository to local drive <br>
 git clone https://github.com/chansbest/python-crud-sample.git
 
-step 2: move into python-crud-sample directory and create python enviroment named env to run all.
-cd python-crud-sample
-python3 -m venv env 
-alternatively python -m venv env 
+step 2: move into python-crud-sample directory and create python enviroment named env to run all. <br>
+cd python-crud-sample <br>
+python3 -m venv env  <br>
+alternatively python -m venv env  <br>
 
-step 3 : install dependencies
-pip install -r requirements.txt
+step 3 : install dependencies <br>
+pip install -r requirements.txt <br>
 
 step 4: activate enviroment
 on windows
