@@ -16,7 +16,7 @@ step 2: move into python-crud-sample directory and create python enviroment name
 `python3 -m venv env`  <br>
 alternatively `python -m venv env`  <br>
 
-![creating env!](/assets/images/env_creation.JPG")
+![creating env!](/assets/images/env_creation.JPG  "creating env")
 
 step 3: activate enviroment
 on windows<br>
