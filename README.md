@@ -16,14 +16,19 @@ step 2: move into python-crud-sample directory and create python enviroment name
 `python3 -m venv env`  <br>
 alternatively `python -m venv env`  <br>
 
-step 3 : install dependencies <br>
-`pip install -r requirements.txt` <br>
+![creating env!](/assets/images/env_creation.JPG")
 
-step 4: activate enviroment
+step 3: activate enviroment
 on windows<br>
 `env\Scripts\activate`<br>
 on linux<br>
 `source env\bin\activate`<br>
+
+
+step 4 : install dependencies <br>
+`pip install -r requirements.txt` <br>
+
+
 
 step 5 (optional):
 initialize sqllite dataset by running sqllite.py,<br>
