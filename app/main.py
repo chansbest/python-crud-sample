@@ -34,11 +34,11 @@ def update(id: int ,payload: StateRecordBase,response: Response):
         response.status_code = status.HTTP_422_UNPROCESSABLE_ENTITY
         response_object = {"message":"item not found in database"}
     
-    if result == 0:
+    elif result == 0:
         response.status_code = status.HTTP_200_OK
         response_object = {"message":"success","modifiedRecord":payload}
 
-    if result == 1:
+    else :
         response.status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
         response_object = {"message":"unknown error"}
     
@@ -52,11 +52,11 @@ def delete(id: int ,response: Response):
         response.status_code = status.HTTP_422_UNPROCESSABLE_ENTITY
         response_object = {"message":"item not found in database"}
     
-    if result == 0:
+    elif result == 0:
         response.status_code = status.HTTP_200_OK
         response_object = {"message":"success"}
 
-    if result == 1:
+    else:
         response.status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
         response_object = {"message":"unknown error"}
     

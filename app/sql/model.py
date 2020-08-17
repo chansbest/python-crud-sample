@@ -5,7 +5,9 @@ from sqlalchemy import (Column, DateTime, Integer, MetaData, String, Table,DATE,
                         create_engine)
 
 
-
+"""
+ORM mapping for us_states table
+"""
 us_states_table = Table(
     "us_states",
     MetaData(),
@@ -22,8 +24,8 @@ us_states_table = Table(
     sqlite_autoincrement=True
 )
 
-
 class StateRecordBase(BaseModel):
+    """model for request/response validation"""
     record_date: date
     state:str
     fips: Optional[int]
@@ -37,6 +39,9 @@ class StateRecordBase(BaseModel):
 
 
 class StateRecord(StateRecordBase):
+    """
+    Extension of StateRecordBase to add auto generated id
+    """
     id: int
 
     def addBaseRecord(self,baserecord : StateRecordBase):
@@ -55,6 +60,9 @@ class StateRecord(StateRecordBase):
 
 
 class StateRecordResponse(BaseModel):
+    """
+    Extension of StateRecord to respond with a message
+    """
     message: Optional[str]
     modifiedRecord: Optional[StateRecordBase]
 

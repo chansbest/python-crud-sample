@@ -4,7 +4,8 @@ logger = logging.getLogger()
 
 
 def logstartenddef(func):
-    """log the function signature and return value"""
+    """log the function signature and return value
+    """
     @functools.wraps(func)
     def wrapper_debug(*args, **kwargs):
         args_repr = [repr(a) for a in args]                      

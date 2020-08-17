@@ -6,9 +6,13 @@ from util.logutil import logstartenddef
 logger = logging.getLogger()
 
 class us_states_dao:
+    """ a class that encapsulates all data operations for us_states table """
     @logstartenddef
     def read(self):
-        
+        """reads all records and returns a list
+
+        :rtype: list
+        """
         connection,engine = sqlconnection().getAlchemyConnection()
         query = us_states_table.select()
         proxy = connection.execute(query)
@@ -18,7 +22,14 @@ class us_states_dao:
     
     @logstartenddef
     def update(self,id: int, baserecord: StateRecordBase):
-        
+        """updates record and return code,
+        0 = sucess , 1 = failure, 2 = record not found
+        :id arg: id of record to update
+        :type arg: int
+        :baserecord arg: json dict of record to update
+        :type arg: StateRecordBase
+        :rtype: tuple
+        """
         try:
             connection,engine = sqlconnection().getAlchemyConnection()
         
@@ -27,6 +38,7 @@ class us_states_dao:
             row = result.fetchone()
 
             if row is not None:
+                # if item is found in database update
                 query = (
                 us_states_table
                 .update()
@@ -49,9 +61,11 @@ class us_states_dao:
                 output = baserecord
             
             else: 
+                # if record not found in database then return 2
                 return None,2
             
         except Exception as e:
+            # in case of error return 1 as code
             logger.error("error while deleting",exc_info=1)
             return None,1
 
@@ -60,8 +74,13 @@ class us_states_dao:
     
     @logstartenddef
     def insert(self,baserecord: StateRecord):
+        """inserts record and returns inserted record with id,
+        s
+        :baserecord arg: json dict of record to update
+        :type arg: StateRecordBase
+        :rtype: StateRecord
+        """
         connection,engine = sqlconnection().getAlchemyConnection()
-       
         query = us_states_table.insert().values(
             record_date = baserecord.record_date,
             state = baserecord.state,
@@ -91,6 +110,13 @@ class us_states_dao:
     
     @logstartenddef
     def delete(self,recordId: int):
+        """deletes record and return code,
+        0 = sucess , 1 = failure, 2 = record not found
+        :id arg: id of record to update
+        :type arg: int
+
+        :rtype: int
+        """
         try:
             connection,engine = sqlconnection().getAlchemyConnection()
         
