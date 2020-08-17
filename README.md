@@ -74,3 +74,6 @@ http://localhost:8000/docs
 #### click on one of endpoint (insert,update,delete,select) to view documentation then click try it out button to test api <br>
 
 ![try!](/assets/images/tryingout2.JPG  "try")
+
+
+![try!](/assets/images/tryingout3.JPG  "try")
