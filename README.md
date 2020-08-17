@@ -1,12 +1,12 @@
 # python crud sample
 
-## features 
-1.python utility script to create a sqllite schema and insert data from csv file into it.
-2.restfull api with FASTAPI library to insert,update,select,delete endpoints to manipulate data in sqllite database.
-3.request and response validation using pydentic models.
-4.inbuilt ui for trying out requests thanks to FAST API library.
-5.test cases using pytest library
-6.logging using python3 decorators.
+## features <br>
+1. python utility script to create a sqllite schema and insert data from csv file into it.
+2. restfull api with FASTAPI library to insert,update,select,delete endpoints to manipulate data in sqllite database.
+3. request and response validation using pydentic models.
+4. inbuilt ui for trying out requests thanks to FAST API library.
+5. test cases using pytest library
+6. logging using python3 decorators.
  
  
 
