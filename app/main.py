@@ -6,7 +6,9 @@ import logging
 logging.basicConfig(filename='log.log',level=logging.DEBUG)
 app = FastAPI()
 
-
+"""
+This is application entry point, all end points/controllers/routes are defined in this file.
+"""
 
 @app.get("/staterecords/")
 def read(response: Response,start: Optional[int] = 0 , count: Optional[int] = 10 ,):
