@@ -1,5 +1,14 @@
 # python crud sample
 
+## features 
+ #### python utility script to create a sqllite schema and insert data from csv file into it.
+ #### restfull api with FASTAPI library to insert,update,select,delete endpoints to manipulate data in sqllite database.
+ #### request and response validation using pydentic models.
+ #### inbuilt ui for trying out requests thanks to FAST API library.
+ #### test cases using pytest library
+ #### logging using python3 decorators.
+ 
+ 
 
 ## installation 
 ### Prerequisites:
@@ -13,7 +22,7 @@ clone repository to local drive <br>
 
 step 2: move into python-crud-sample directory and create python enviroment named env to run all. <br>
 `cd python-crud-sample` <br>
-`python3 -m venv env`  <br>
+`python3.8 -m venv env`  <br>
 alternatively `python -m venv env`  <br>
 
 
