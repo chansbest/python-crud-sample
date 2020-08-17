@@ -52,11 +52,11 @@ exiting sqllite file already contains data so this step is optional.<br>
 `cd app`
 
  #### step 7: (optional)  run test cases for api<br>
-'pytest'<br>
+`pytest`<br>
 ![test cases!](/assets/images/testcases.JPG  "test cases")
 
  #### step 8: start rest api in server<br>
- 'uvicorn main:app --host 0.0.0.0'<br>
+ `uvicorn main:app --host 0.0.0.0`<br>
 ![run api!](/assets/images/runningapi.JPG  "run api")
 
 
