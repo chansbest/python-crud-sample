@@ -1,12 +1,12 @@
 # python crud sample
 
 
-##installation 
-###Prerequisites:
-Python 3.8 ( should probably work fine 3.6+)
-git
+## installation 
+### Prerequisites:
+ Python 3.8 ( should probably work fine 3.6+)
+ git
 
-###Steps
+### Steps
 step 1:
 clone repository to local drive
 git clone https://github.com/chansbest/python-crud-sample.git
