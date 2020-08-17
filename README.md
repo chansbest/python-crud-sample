@@ -1,6 +1,6 @@
-# python crud sample
+# Python crud sample
 
-## features <br>
+## Features <br>
 1. python utility script to create a sqllite schema and insert data from csv file into it.
 2. restfull api with FAST API library to insert,update,select,delete endpoints to manipulate data in sqllite database.
 3. request and response validation using pydentic models.
@@ -11,7 +11,7 @@
  
  
 
-## installation 
+## Installation 
 ### Prerequisites:
  Python 3.8 ( should probably work fine 3.6+)<br>
  git<br>
