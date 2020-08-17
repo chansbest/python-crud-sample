@@ -61,7 +61,11 @@ exiting sqllite file already contains data so this step is optional.<br>
 ![test cases!](/assets/images/testcases.JPG  "test cases")
 
  #### step 8: start rest api in server<br>
- `uvicorn main:app --host 0.0.0.0`<br>
+ `uvicorn main:app --host 0.0.0.0` to enable acces from outside host machine <br>
+ 
+ or 
+ 
+ `uvicorn main:app` accesible from host machine only<br>
  
 ![run api!](/assets/images/runningapi.JPG  "run api")
 
