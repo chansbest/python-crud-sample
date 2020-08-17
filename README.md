@@ -13,7 +13,7 @@
 
 ## Installation 
 ### Prerequisites:
- Python 3.8 ( should probably work fine 3.6+)<br>
+ Python 3.8 ( should probably work fine on 3.6+)<br>
  git<br>
 
 ### Steps
@@ -32,7 +32,7 @@ alternatively `python -m venv env`  <br>
 on windows<br>
 `env\Scripts\activate`<br>
 on linux<br>
-`source env\bin\activate`<br>
+`source env/bin/activate`<br>
 
 
  ####  step 4 : install dependencies <br>
