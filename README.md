@@ -7,7 +7,7 @@
 4. database operations performed using Sqlalchemy ORM
 4. inbuilt ui for trying out requests thanks to FAST API library.
 5. test cases using pytest library
-6. logging using python3 decorators.
+6. logging using python logging module and python3 decorators.
  
  
 
