@@ -71,4 +71,6 @@ http://localhost:8000/docs
 
 ![try!](/assets/images/trying.JPG  "try")
 
+#### click on try it out button to test api <br>
 
+![try!](/assets/images/tryingout2.JPG  "try")
