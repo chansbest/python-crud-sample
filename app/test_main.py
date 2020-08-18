@@ -70,7 +70,7 @@ def test_add_basic_fail(test_app, monkeypatch):
 
 
 def test_del_basic(test_app, monkeypatch):
-     # basic sanity read
+     # basic sanity delete sucess
     def mock_del(self,id):
         return 0
     monkeypatch.setattr(us_states_dao, "delete", mock_del)
@@ -78,7 +78,7 @@ def test_del_basic(test_app, monkeypatch):
     assert response.status_code == 200
 
 def test_del_fail(test_app, monkeypatch):
-     # basic sanity read
+     # basic sanity delete fail
     def mock_del(self,id):
         return 1
     monkeypatch.setattr(us_states_dao, "delete", mock_del)
